@@ -1,0 +1,31 @@
+{% extends "model_page.html" %}
+
+{% block content %}
+<h1 class="text-center">Cadastrar marmita para pedido </h1>
+<form enctype="multipart/form-data" action="submit", method="POST">
+<div class="conteiner">
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input class="form-control" name="email" type="text">
+</div>
+<div class="form-group">
+    <label for="phone">Telefone:</label>
+    <input class="form-control" name="phone" type="text">
+</div>
+<div class="form-group">
+    <label for="sabor">Sabor</label>
+    <input class="form-control" name="sabor" type="text">
+</div>
+<div class="form-group">
+    <label for="descricao">Descrição</label>
+    <textarea class="form-control" rows="5" name="descricao"></textarea>
+</div>
+<div class="form-group">
+    <input type="file" class="form-control-file border" name="file" accept="image/*">
+</div>
+<button class="btn btn-primary">
+    Cadastrar
+</button>
+</form>
+</div>
+{% endblock %}
